@@ -12,5 +12,6 @@ public partial class vRegistro : ContentPage
 		string usuario = txtUsuario.Text;
 		string contrasena = txtContrasena.Text;
 		Navigation.PushAsync(new vGrid(usuario, contrasena));
+		//comentario
     }
 }

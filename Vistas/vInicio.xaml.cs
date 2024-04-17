@@ -8,7 +8,7 @@ public partial class vInicio : ContentPage
 	{
 		InitializeComponent();
 		DisplayAlert("Alerta", "Bienvenido " + usuario, "Cerrar");
-		lblUsuario.Text = "Usuario conectado: " + usuario;
+		lblUsuario.Text = "Usuario conectado: " + usuario;// comentario
 	}
 
     private void btnPicker_Clicked(object sender, EventArgs e)
