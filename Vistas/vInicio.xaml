@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rtoasaS2.Vistas.vInicio"
+             NavigationPage.HasNavigationBar="False"
+            >
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="20,20,20,20">
+            <Label x:Name="lblUsuario"
+                   HorizontalTextAlignment="End"
+                  FontSize="14"/>
+            <Label 
+            Text="Elementos visuales"
+            TextColor="Black"
+            FontSize="24"
+            HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="txtDato"
+               Placeholder="Ingrese su dirección"
+               MaxLength="10"/>
+
+            <Image Source="uisrael.png"
+               HeightRequest="100"/>
+
+            <Picker x:Name="pkCiudades" Title="Ciudades" SelectedIndexChanged="pkCiudades_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>QUITO</x:String>
+                    <x:String>GUAYAQUIL</x:String>
+                    <x:String>CUENCA</x:String>
+                    <x:String>MANTA</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button x:Name="btnPicker" 
+                Text="Ver elemento seleccionado"
+                Clicked="btnPicker_Clicked"/>
+
+            <DatePicker x:Name="dpFecha" 
+                    Format="MM/dd/yyyy"
+                    />
+
+            <Label x:Name="lblFecha" 
+               FontSize="20" 
+               TextColor="Red"/>
+            
+
+            <Button x:Name="btnFecha"
+                    Padding="20,20,20,20"
+                    
+                    
+                Text="VER FECHA"
+                Clicked="btnFecha_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
